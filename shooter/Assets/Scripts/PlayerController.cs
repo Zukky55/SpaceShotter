@@ -10,16 +10,21 @@ public class Boundary
 
 public class PlayerController : MonoBehaviour
 {
+    /// <summary>機体のスピード</summary>
     public float speed;
+    /// <summary>機体が動く時の角度</summary>
     public float tilt;
+    /// <summary>境界</summary>
     public Boundary boundary;
-
+    /// <summary>weapon</summary>
     public GameObject shot;
+    /// <summary>weapon's spawn point</summary>
     public Transform shotSpawn;
+    /// <summary>weapon's fireRate</summary>
     public float fireRate;
-
     private float nextFire;
-
+    /// <summary>bullets sound</summary>
+    AudioSource bs;
     
 
     
@@ -30,6 +35,8 @@ public class PlayerController : MonoBehaviour
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+            bs = GetComponent<AudioSource>();
+            bs.Play();
         }
     }
 
