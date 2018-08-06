@@ -1,0 +1,2 @@
+E:\GameCreate\Practice\shooter\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+E:\GameCreate\Practice\shooter\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
