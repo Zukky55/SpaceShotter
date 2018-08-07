@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio for Mac
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shooter", "Assembly-CSharp.csproj", "{5330AA3F-1D54-37C3-9577-11EE959150E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shooter", "Assembly-CSharp-Editor.csproj", "{BBC31877-A552-F73B-CB14-5AAE409B4A3D}"
