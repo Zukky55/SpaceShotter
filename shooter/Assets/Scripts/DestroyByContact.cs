@@ -3,8 +3,12 @@ using System.Collections;
 
 public class DestroyByContact : MonoBehaviour
 {
-    public GameObject explosion;
-    public GameObject playerExplosion;
+    [SerializeField] GameObject explosion;
+    [SerializeField] GameObject playerExplosion;
+    [SerializeField] int m_scoreValue;
+    /// <summary>Class GameController</summary>
+    GameController m_gc;
+    GameObject m_gco;
 
 
     void OnTriggerEnter(Collider other)
@@ -20,7 +24,12 @@ public class DestroyByContact : MonoBehaviour
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
         }
 
+        m_gco = GameObject.Find("GameController");
+        m_gc = m_gco.GetComponent<GameController>();
         Destroy(other.gameObject);
         Destroy(gameObject);
+        m_gc.AddScore(m_scoreValue);
+        
+
     }
 }
